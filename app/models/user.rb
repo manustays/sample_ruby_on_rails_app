@@ -19,3 +19,16 @@ class User < ActiveRecord::Base
 	validates :password, length: { minimum: 6, maximum: 50 }
 	validates :password_confirmation, presence: true
 end
+
+
+
+####EXAMPLES
+#validates :terms, :acceptance => true
+#validates :password, :confirmation => true
+#validates :username, :exclusion => { :in => %w(admin superuser) }
+#validates :email, :format => { :with => %r\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/, :on => :create }
+#validates :age, :inclusion => { :in => 0..9 }
+#validates :first_name, :length => { :maximum => 30 }
+#validates :age, :numericality => true
+#validates :username, :presence => true
+#validates :username, :uniqueness => true
